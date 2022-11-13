@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    color: rgb(146, 0, 0);
+}
+
+body {
+    background-color: black;
+}
+
+div {
+    color: chartreuse;
+}
+
+th {
+    color: rgb(0, 225, 255);
+}
+
+.elso {
+    color: rgb(174, 255, 0);
+}
+
+td {
+    color: rgb(234, 255, 1);
+}
+
+.lista{
+    text-align: left;
+}
+
