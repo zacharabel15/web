@@ -1,0 +1,19 @@
+div {
+    margin: 1%;
+    float: left;
+transition: .8s;
+text-align: center;
+font-size: x-large;
+font-weight: bolder;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+div :hover {
+transform: scale(1.1);
+}
