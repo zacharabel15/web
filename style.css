@@ -29,3 +29,7 @@ ul {
 
     float: none;
   }
+
+  table {
+    border: 2px;
+  }
