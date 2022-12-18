@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../minden.css">
+    <title>RESPONSIVE-LISTA</title>
+
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .menu {
+          float: left;
+          width: 20%;
+          text-align: center;
+        }
+        
+        .menu a {
+          background-color: #000000;
+          padding: 8px;
+          margin-top: 7px;
+          display: block;
+          width: 100%;
+          color: rgb(255, 0, 153);
+        }
+        
+        .main {
+          float: left;
+          width: 60%;
+          padding: 0 20px;
+        }
+        
+        .right {
+          background-color: #000000;
+          float: left;
+          width: 20%;
+          padding: 15px;
+          margin-top: 7px;
+          text-align: center;
+        }
+        
+        @media only screen and (max-width: 620px) {
+          /* For mobile phones: */
+          .menu, .main, .right {
+            width: 100%;
+          }
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .lista{
+            text-align: left;
+        }
+        </style>
+
+</head>
+<body style="font-family:Verdana;color:#000000;">
+
+    <div style="background-color:#000000;padding:15px;text-align:center;">
+        <h1>Listák</h1>
+      </div>
+      
+      <div style="overflow:auto">
+        <div class="menu">
+            <a class="active" href="index2.html">RESPONSIVE-FŐOLDAL</a>
+            <a href="keplink2.html">RESPONSIVE-KÉPLINK</a>
+            <a href="lista2.html">RESPONSIVE-LISTÁK</a>
+            <a href="tablazat2.html">RESPONSIVE-ÓRAREND</a>
+            <a href="urlap2.html">RESPONSIVE-ŰRLAP</a>
+            <a href="evszakok2.html">RESPONSIVE-ÉVSZAKOK</a>
+        </div>
+      
+        <div class="main">
+          <h2>Listák</h2>
+          <p><h1 class="lista">Kedvenc tantárgyaim:</h1>
+            <h2>IKT Projektmunka</h2>
+            <h2>Informatika és távközlés</h2>
+            <h2>Programozási alapok</h2>
+        <h1 class="lista">Kedvenc szabadidős tevékenysségeim:</h1>
+            <h2>1. Motorozás</h2> 
+            <h2>2. Gitározás</h2>
+            <h2>3. Sport</h2></p>
+
+        </div>
+      
+        <div class="right">
+          <h2>Listák</h2>
+          <p>
+                A LISTA AZ JÓ, HASZNÁLLJÁTOK!!!!!
+          </p>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <footer>
+            <p>Copyright <br>
+            <a href="mailto:zachara@kkszki.hu">zachara@kkszki.hu</a></p>  
+        </footer> 
+    </div>      
+
+
+    
+</body>
+</html>
