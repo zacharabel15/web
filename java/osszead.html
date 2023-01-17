@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="osszead.css">
+    <title>Összead</title>
+</head>
+<body>
+
+    <h1>Összeadás</h1>
+
+    <form action="javascript:ad()">
+        <input type="number" name="a" id="a" placeholder="a"> +
+        <input type="number" name="b" id="b" placeholder="b"> =
+        <p id="c"> Eredmény</p>
+        <input type="submit" value="SUBMIT">
+        <input type="color" name="szin" id="szin">
+    </form>
+
+    <h1>Kivonás</h1>
+
+    <form action="javascript:von()">
+        <input type="number" name="a" id="aa" placeholder="a"> -
+        <input type="number" name="b" id="bb" placeholder="b"> =
+        <p id="cc"> Eredmény</p>
+        <input type="submit" value="SUBMIT">
+        <input type="color" name="szin" id="szinn">
+    </form>
+
+    <script>
+        function ad() {
+            document.getElementById("c").innerText = ("A két szám összege: " + (Number(a.value) + Number(b.value)) );
+            document.body.style.backgroundColor = szin.value;
+        }
+
+        function von() {
+            document.getElementById("cc").innerText = ("A két szám külömbsége:" + (Number(aa.value) - Number(bb.value)) ) ;
+            document.body.style.backgroundColor = szin.value;
+
+        }
+    </script>
+    
+</body>
+</html>

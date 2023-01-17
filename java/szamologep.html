@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számológép</title>
+</head>
+<body>
+
+    <form action="javascript:mind()">
+        <input type="number" name="a" id="a" placeholder="a"> 
+        <input type="number" name="b" id="b" placeholder="b"> =
+        <p id="c"> Eredmény</p>
+        <input type="submit" name="osszead" value="ÖSSZEAD">
+        <input type="submit" name="kivon" value="KIVON">
+        <input type="submit" name="szoroz" value="SZOROZ">
+        <input type="submit" value="OSZT">
+    </form>
+    
+
+    <script>
+        function mind() {
+            document.getElementById("c").innerText = ("Eredmény = " + (Number(a.value) + Number(b.value)) );
+
+        }
+        
+        {
+            document.getElementById("c").innerText = ("Eredmény = " - (Number(a.value) - Number(b.value)) );
+
+        }
+        
+
+        
+    </script>
+
+
+
+</body>
+</html>
