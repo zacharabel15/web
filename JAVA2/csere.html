@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Csere</title>
+    <style>
+        body {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>KÉP ÉS HÁTTÉR VÁLTOZTATÁS GOMBNYOMÁSRA</h1>
+    <input type="button" value="kep" onclick="kepcsere()">
+    <input type="button" value="hatter" onclick="hattercsere()">
+
+
+
+    <P><img src="img/kor.jpg" alt="" id="kep" width="200px"></P>
+
+
+
+    <script>
+        let valt = 0
+        function kepcsere() {
+            document.getElementById("kep").src = "img/haromszog.png";
+            if (valt == 0) {
+
+            }
+
+            else {
+
+            }
+
+        }
+
+        function hattercsere() {
+            document.body.style.backgroundColor = "red";
+        }
+
+
+    </script>
+
+</body>
+
+</html>
