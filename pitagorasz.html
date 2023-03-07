@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pitagorasz</title>
     <style>
-        .fasz{
-            font-family: 'Shadows Into Light', cursive;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+       
+        
         h1 {
             font-family: 'Pacifico', cursive;
         }
+
     </style>
 </head>
 <body>
@@ -26,15 +27,18 @@
         <p><input type="text" id="c" oninput="szam()"> c. oldal</p>
     </form>
 
-    <h1>VÁLASZ EGY SZÍNT<input type="color" id="szin"></h1>
+    <h2>VÁLASZ EGY SZÍNT<input type="color" id="szin"></h2>
 
     <script>
         function szam() {
             if (a.value != 0 && b.value != 0) {
                 c.value = Math.sqrt((a.value * a.value) + (b.value * b.value));
             }
-            if (a.value != 0 && c.value != 0) {
-                b.value = Math.sqrt((a.value * a.value) + (c.value * c.value));
+            else if (a.value != 0 && c.value != 0) {
+                b.value = Math.sqrt((c.value * c.value)-(a.value * a.value));
+            }
+            else if (b.value != 0 && c.value != 0) {
+                a.value = Math.sqrt((c.value * c.value)-(b.value * b.value));
             }
         }
         const input = document.getElementById("szin");
@@ -44,6 +48,7 @@
     </script>
 </body>
 </html>
+
 
 
 
