@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../menu.css">
+    <title>Pitagorasz</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+       
+        
+        h1 {
+            font-family: 'Pacifico', cursive;
+        }
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a href="../egyeb.html">EGYÉBB OLDALAK/FELADATOK</a></li>
+        <li><a href="../java/szamologep.html">SZÁMOLÓGÉP</a></li>
+        <li><a class="active" href="JAVA2/pitagorasz.html">PITAGORASZ</a></li>
+    </ul>
+    
+    <h1 class="fasz">PITAGORASZ TÉTEL SZÁMOLÓ</h1>
+    <img src="../img/pita.png" alt="HÁROMSZÖG">
+
+    <p>Adj meg legalább két oldalt</p>
+    <form>
+        <p><input type="text" id="a" oninput="szam()"> a. oldal</p>
+        <p><input type="text" id="b" oninput="szam()"> b. oldal</p>
+        <p><input type="text" id="c" oninput="szam()"> c. oldal</p>
+    </form>
+
+    <h2>VÁLASZ EGY SZÍNT<input type="color" id="szin"></h2>
+
+    <script>
+        function szam() {
+            if (a.value != 0 && b.value != 0) {
+                c.value = Math.sqrt((a.value * a.value) + (b.value * b.value));
+            }
+            else if (a.value != 0 && c.value != 0) {
+                b.value = Math.sqrt((c.value * c.value)-(a.value * a.value));
+            }
+            else if (b.value != 0 && c.value != 0) {
+                a.value = Math.sqrt((c.value * c.value)-(b.value * b.value));
+            }
+        }
+        const input = document.getElementById("szin");
+            input.oninput = () => {
+                document.body.style.backgroundColor = input.value
+            };
+    </script>
+</body>
+</html>
+
+
+
+
+
